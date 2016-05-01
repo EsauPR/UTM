@@ -1,0 +1,8 @@
+vhdtdtfi -lib work ../uart/src/UC.vhd -prj UCISE -o UC.spl -module UC -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e UC.spl C:/My_Designs/procesadorUSB/UCISE/UC.sym 
+vhdtdtfi -lib work ../uart/src/UC.vhd -prj UCISE -o UC.spl -module UC -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e UC.spl C:/My_Designs/procesadorUSB/UCISE/UC.sym 
+vhdtdtfi -lib work ../uart/src/UC.vhd -prj UCISE -o UC.spl -module UC -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e UC.spl C:/My_Designs/procesadorUSB/UCISE/UC.sym 
+vhdtdtfi -lib work ../uart/src/UC.vhd -prj UCISE -o UC.spl -module UC -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e UC.spl C:/My_Designs/procesadorUSB/UCISE/UC.sym 

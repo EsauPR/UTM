@@ -1,0 +1,14 @@
+[Version]
+Version=6.2
+[Designs]
+uart=uart.adf
+[Settings]
+Active=uart
+[Expand]
+uart=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

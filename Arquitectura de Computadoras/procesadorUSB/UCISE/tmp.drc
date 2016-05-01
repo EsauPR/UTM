@@ -1,0 +1,13 @@
+Release 12.1 Drc M.53d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Fri May 08 21:06:53 2015
+
+drc -z tmp.ncd tmp.pcf
+
+WARNING:PhysDesignRules:367 - The signal <btn_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <txe_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+DRC detected 0 errors and 2 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

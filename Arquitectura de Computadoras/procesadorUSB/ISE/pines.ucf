@@ -1,0 +1,36 @@
+
+# Entradas
+
+
+NET  "clk"  LOC = "B8";
+NET  "rst"  LOC = "B18";
+
+
+
+# pines controlador USB
+
+NET "dataUSB<0>" LOC = "M15";
+NET "dataUSB<1>" LOC = "L17";
+NET "dataUSB<2>" LOC = "K12";
+NET "dataUSB<3>" LOC = "L15";
+NET "dataUSB<4>" LOC = "K13";
+NET "dataUSB<5>" LOC = "L16";
+NET "dataUSB<6>" LOC = "M14";
+NET "dataUSB<7>" LOC = "M16";
+
+NET "rxf" LOC = "M13";
+NET "txe" LOC = "R18";
+#NET "wr" LOC = "R15";
+NET "rd" LOC = "T17";
+
+
+
+# Salidas
+NET  "leds<0>"  LOC = "J14";
+NET  "leds<1>"  LOC = "J15";
+NET  "leds<2>"  LOC = "K15";
+NET  "leds<3>"  LOC = "K14";
+NET  "leds<4>"  LOC = "E17";
+NET  "leds<5>"  LOC = "P15";
+NET  "leds<6>"  LOC = "F4";
+NET  "leds<7>"  LOC = "R4";

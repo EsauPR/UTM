@@ -1,0 +1,415 @@
+Release 12.1 Map M.53d (nt)
+Xilinx Mapping Report File for Design 'tmp'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off
+-c 100 -o tmp_map.ncd tmp.ngd tmp.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.52 $
+Mapped Date    : Fri May 08 21:06:31 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    2
+Logic Utilization:
+  Number of Slice Flip Flops:            84 out of   9,312    1%
+  Number of 4 input LUTs:               101 out of   9,312    1%
+Logic Distribution:
+  Number of occupied Slices:             83 out of   4,656    1%
+    Number of Slices containing only related logic:      83 out of      83 100%
+    Number of Slices containing unrelated logic:          0 out of      83   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         135 out of   9,312    1%
+    Number used as logic:               101
+    Number used as a route-thru:         34
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 22 out of     232    9%
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Average Fanout of Non-Clock Nets:                2.88
+
+Peak Memory Usage:  158 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:367 - The signal <btn_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <txe_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network btn_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 1 more times for the following
+   (max. 5 shown):
+   txe_IBUF
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 102 block(s) removed
+   2 block(s) optimized away
+ 101 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "XLXI_4" (RAMB16_S9_S18) removed.
+ The signal "XLXI_3/WR" is loadless and has been removed.
+  Loadless block "XLXI_3/WR" (SFF) removed.
+   The signal "XLXI_3/WR_mux0000" is loadless and has been removed.
+    Loadless block "XLXI_3/WR_mux00001" (ROM) removed.
+ The signal "XLXI_3/Tdir<10>" is loadless and has been removed.
+  Loadless block "XLXI_3/Tdir_10" (FF) removed.
+   The signal "XLXI_3/Tdir_mux0000<10>" is loadless and has been removed.
+    Loadless block "XLXI_3/Tdir_mux0000<10>29" (ROM) removed.
+     The signal "XLXI_3/Tdir_mux0000<10>14" is loadless and has been removed.
+      Loadless block "XLXI_3/Tdir_mux0000<10>14" (ROM) removed.
+       The signal "XLXI_3/H<2>" is loadless and has been removed.
+        Loadless block "XLXI_3/H_2" (FF) removed.
+         The signal "XLXI_3/H_not0001" is loadless and has been removed.
+          Loadless block "XLXI_3/H_not00011" (ROM) removed.
+     The signal "N14" is loadless and has been removed.
+      Loadless block "XLXI_3/Tdir_mux0000<10>22_SW1" (ROM) removed.
+     The signal "XLXI_3/Tdir_addsub0000<10>" is loadless and has been removed.
+      Loadless block "XLXI_3/Madd_Tdir_addsub0000_xor<10>" (XOR) removed.
+       The signal "XLXI_3/Madd_Tdir_addsub0000_cy<9>" is loadless and has been removed.
+        Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<9>" (MUX) removed.
+         The signal "XLXI_3/Madd_Tdir_addsub0000_cy<8>" is loadless and has been removed.
+          Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<8>" (MUX) removed.
+           The signal "XLXI_3/Madd_Tdir_addsub0000_cy<7>" is loadless and has been removed.
+            Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<7>" (MUX) removed.
+             The signal "XLXI_3/Madd_Tdir_addsub0000_cy<6>" is loadless and has been removed.
+              Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<6>" (MUX) removed.
+               The signal "XLXI_3/Madd_Tdir_addsub0000_cy<5>" is loadless and has been removed.
+                Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<5>" (MUX) removed.
+                 The signal "XLXI_3/Madd_Tdir_addsub0000_cy<4>" is loadless and has been removed.
+                  Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<4>" (MUX) removed.
+                   The signal "XLXI_3/Madd_Tdir_addsub0000_cy<3>" is loadless and has been removed.
+                    Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<3>" (MUX) removed.
+                     The signal "XLXI_3/Madd_Tdir_addsub0000_cy<2>" is loadless and has been removed.
+                      Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<2>" (MUX) removed.
+                       The signal "XLXI_3/Madd_Tdir_addsub0000_cy<1>" is loadless and has been removed.
+                        Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<1>" (MUX) removed.
+                         The signal "XLXI_3/Madd_Tdir_addsub0000_cy<0>" is loadless and has been removed.
+                          Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<0>" (MUX) removed.
+                           The signal "XLXI_3/Madd_Tdir_addsub0000_lut<0>" is loadless and has been
+removed.
+                            Loadless block "XLXI_3/Madd_Tdir_addsub0000_lut<0>_INV_0" (BUF) removed.
+                             The signal "XLXI_3/Tdir<0>" is loadless and has been removed.
+                              Loadless block "XLXI_3/Tdir_0" (FF) removed.
+                               The signal "XLXI_3/Tdir_mux0000<0>" is loadless and has been removed.
+                                Loadless block "XLXI_3/Tdir_mux0000<0>29" (ROM) removed.
+                                 The signal "XLXI_3/Tdir_mux0000<0>14" is loadless and has been removed.
+                                  Loadless block "XLXI_3/Tdir_mux0000<0>14" (ROM) removed.
+                         The signal "XLXI_3/Madd_Tdir_addsub0000_cy<1>_rt" is loadless and has been
+removed.
+                          Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<1>_rt" (ROM) removed.
+                           The signal "XLXI_3/Tdir<1>" is loadless and has been removed.
+                            Loadless block "XLXI_3/Tdir_1" (FF) removed.
+                             The signal "XLXI_3/Tdir_mux0000<1>" is loadless and has been removed.
+                              Loadless block "XLXI_3/Tdir_mux0000<1>29" (ROM) removed.
+                               The signal "XLXI_3/Tdir_addsub0000<1>" is loadless and has been removed.
+                                Loadless block "XLXI_3/Madd_Tdir_addsub0000_xor<1>" (XOR) removed.
+                               The signal "XLXI_3/Tdir_mux0000<1>14" is loadless and has been removed.
+                                Loadless block "XLXI_3/Tdir_mux0000<1>14" (ROM) removed.
+                               The signal "N42" is loadless and has been removed.
+                                Loadless block "XLXI_3/Tdir_mux0000<1>22_SW0" (ROM) removed.
+                       The signal "XLXI_3/Madd_Tdir_addsub0000_cy<2>_rt" is loadless and has been
+removed.
+                        Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<2>_rt" (ROM) removed.
+                         The signal "XLXI_3/Tdir<2>" is loadless and has been removed.
+                          Loadless block "XLXI_3/Tdir_2" (FF) removed.
+                           The signal "XLXI_3/Tdir_mux0000<2>" is loadless and has been removed.
+                            Loadless block "XLXI_3/Tdir_mux0000<2>29" (ROM) removed.
+                             The signal "XLXI_3/Tdir_mux0000<2>14" is loadless and has been removed.
+                              Loadless block "XLXI_3/Tdir_mux0000<2>14" (ROM) removed.
+                             The signal "N40" is loadless and has been removed.
+                              Loadless block "XLXI_3/Tdir_mux0000<2>22_SW1" (ROM) removed.
+                             The signal "XLXI_3/Tdir_addsub0000<2>" is loadless and has been removed.
+                              Loadless block "XLXI_3/Madd_Tdir_addsub0000_xor<2>" (XOR) removed.
+                     The signal "XLXI_3/Madd_Tdir_addsub0000_cy<3>_rt" is loadless and has been
+removed.
+                      Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<3>_rt" (ROM) removed.
+                       The signal "XLXI_3/Tdir<3>" is loadless and has been removed.
+                        Loadless block "XLXI_3/Tdir_3" (FF) removed.
+                         The signal "XLXI_3/Tdir_mux0000<3>" is loadless and has been removed.
+                          Loadless block "XLXI_3/Tdir_mux0000<3>29" (ROM) removed.
+                           The signal "XLXI_3/Tdir_mux0000<3>14" is loadless and has been removed.
+                            Loadless block "XLXI_3/Tdir_mux0000<3>14" (ROM) removed.
+                           The signal "N37" is loadless and has been removed.
+                            Loadless block "XLXI_3/Tdir_mux0000<3>22_SW1" (ROM) removed.
+                           The signal "XLXI_3/Tdir_addsub0000<3>" is loadless and has been removed.
+                            Loadless block "XLXI_3/Madd_Tdir_addsub0000_xor<3>" (XOR) removed.
+                   The signal "XLXI_3/Madd_Tdir_addsub0000_cy<4>_rt" is loadless and has been
+removed.
+                    Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<4>_rt" (ROM) removed.
+                     The signal "XLXI_3/Tdir<4>" is loadless and has been removed.
+                      Loadless block "XLXI_3/Tdir_4" (FF) removed.
+                       The signal "XLXI_3/Tdir_mux0000<4>" is loadless and has been removed.
+                        Loadless block "XLXI_3/Tdir_mux0000<4>29" (ROM) removed.
+                         The signal "XLXI_3/Tdir_mux0000<4>14" is loadless and has been removed.
+                          Loadless block "XLXI_3/Tdir_mux0000<4>14" (ROM) removed.
+                         The signal "N34" is loadless and has been removed.
+                          Loadless block "XLXI_3/Tdir_mux0000<4>22_SW1" (ROM) removed.
+                         The signal "XLXI_3/Tdir_addsub0000<4>" is loadless and has been removed.
+                          Loadless block "XLXI_3/Madd_Tdir_addsub0000_xor<4>" (XOR) removed.
+                 The signal "XLXI_3/Madd_Tdir_addsub0000_cy<5>_rt" is loadless and has been
+removed.
+                  Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<5>_rt" (ROM) removed.
+                   The signal "XLXI_3/Tdir<5>" is loadless and has been removed.
+                    Loadless block "XLXI_3/Tdir_5" (FF) removed.
+                     The signal "XLXI_3/Tdir_mux0000<5>" is loadless and has been removed.
+                      Loadless block "XLXI_3/Tdir_mux0000<5>29" (ROM) removed.
+                       The signal "XLXI_3/Tdir_mux0000<5>14" is loadless and has been removed.
+                        Loadless block "XLXI_3/Tdir_mux0000<5>14" (ROM) removed.
+                       The signal "N31" is loadless and has been removed.
+                        Loadless block "XLXI_3/Tdir_mux0000<5>22_SW1" (ROM) removed.
+                       The signal "XLXI_3/Tdir_addsub0000<5>" is loadless and has been removed.
+                        Loadless block "XLXI_3/Madd_Tdir_addsub0000_xor<5>" (XOR) removed.
+               The signal "XLXI_3/Madd_Tdir_addsub0000_cy<6>_rt" is loadless and has been
+removed.
+                Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<6>_rt" (ROM) removed.
+                 The signal "XLXI_3/Tdir<6>" is loadless and has been removed.
+                  Loadless block "XLXI_3/Tdir_6" (FF) removed.
+                   The signal "XLXI_3/Tdir_mux0000<6>" is loadless and has been removed.
+                    Loadless block "XLXI_3/Tdir_mux0000<6>29" (ROM) removed.
+                     The signal "XLXI_3/Tdir_mux0000<6>14" is loadless and has been removed.
+                      Loadless block "XLXI_3/Tdir_mux0000<6>14" (ROM) removed.
+                     The signal "N26" is loadless and has been removed.
+                      Loadless block "XLXI_3/Tdir_mux0000<6>22_SW1" (ROM) removed.
+                     The signal "XLXI_3/Tdir_addsub0000<6>" is loadless and has been removed.
+                      Loadless block "XLXI_3/Madd_Tdir_addsub0000_xor<6>" (XOR) removed.
+             The signal "XLXI_3/Madd_Tdir_addsub0000_cy<7>_rt" is loadless and has been
+removed.
+              Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<7>_rt" (ROM) removed.
+               The signal "XLXI_3/Tdir<7>" is loadless and has been removed.
+                Loadless block "XLXI_3/Tdir_7" (FF) removed.
+                 The signal "XLXI_3/Tdir_mux0000<7>" is loadless and has been removed.
+                  Loadless block "XLXI_3/Tdir_mux0000<7>29" (ROM) removed.
+                   The signal "XLXI_3/Tdir_mux0000<7>14" is loadless and has been removed.
+                    Loadless block "XLXI_3/Tdir_mux0000<7>14" (ROM) removed.
+                   The signal "N23" is loadless and has been removed.
+                    Loadless block "XLXI_3/Tdir_mux0000<7>22_SW1" (ROM) removed.
+                   The signal "XLXI_3/Tdir_addsub0000<7>" is loadless and has been removed.
+                    Loadless block "XLXI_3/Madd_Tdir_addsub0000_xor<7>" (XOR) removed.
+           The signal "XLXI_3/Madd_Tdir_addsub0000_cy<8>_rt" is loadless and has been
+removed.
+            Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<8>_rt" (ROM) removed.
+             The signal "XLXI_3/Tdir<8>" is loadless and has been removed.
+              Loadless block "XLXI_3/Tdir_8" (FF) removed.
+               The signal "XLXI_3/Tdir_mux0000<8>" is loadless and has been removed.
+                Loadless block "XLXI_3/Tdir_mux0000<8>29" (ROM) removed.
+                 The signal "XLXI_3/Tdir_mux0000<8>14" is loadless and has been removed.
+                  Loadless block "XLXI_3/Tdir_mux0000<8>14" (ROM) removed.
+                   The signal "XLXI_3/H<0>" is loadless and has been removed.
+                    Loadless block "XLXI_3/H_0" (FF) removed.
+                 The signal "N20" is loadless and has been removed.
+                  Loadless block "XLXI_3/Tdir_mux0000<8>22_SW1" (ROM) removed.
+                 The signal "XLXI_3/Tdir_addsub0000<8>" is loadless and has been removed.
+                  Loadless block "XLXI_3/Madd_Tdir_addsub0000_xor<8>" (XOR) removed.
+         The signal "XLXI_3/Madd_Tdir_addsub0000_cy<9>_rt" is loadless and has been
+removed.
+          Loadless block "XLXI_3/Madd_Tdir_addsub0000_cy<9>_rt" (ROM) removed.
+           The signal "XLXI_3/Tdir<9>" is loadless and has been removed.
+            Loadless block "XLXI_3/Tdir_9" (FF) removed.
+             The signal "XLXI_3/Tdir_mux0000<9>" is loadless and has been removed.
+              Loadless block "XLXI_3/Tdir_mux0000<9>29" (ROM) removed.
+               The signal "XLXI_3/Tdir_mux0000<9>14" is loadless and has been removed.
+                Loadless block "XLXI_3/Tdir_mux0000<9>14" (ROM) removed.
+                 The signal "XLXI_3/H<1>" is loadless and has been removed.
+                  Loadless block "XLXI_3/H_1" (FF) removed.
+               The signal "N17" is loadless and has been removed.
+                Loadless block "XLXI_3/Tdir_mux0000<9>22_SW1" (ROM) removed.
+               The signal "XLXI_3/Tdir_addsub0000<9>" is loadless and has been removed.
+                Loadless block "XLXI_3/Madd_Tdir_addsub0000_xor<9>" (XOR) removed.
+       The signal "XLXI_3/Madd_Tdir_addsub0000_xor<10>_rt" is loadless and has been
+removed.
+        Loadless block "XLXI_3/Madd_Tdir_addsub0000_xor<10>_rt" (ROM) removed.
+ The signal "XLXI_3/dato<7>" is loadless and has been removed.
+  Loadless block "XLXI_3/dato_7" (FF) removed.
+   The signal "XLXI_3/dato_not0001" is loadless and has been removed.
+    Loadless block "XLXI_3/dato_not00011" (ROM) removed.
+ The signal "XLXI_3/dato<6>" is loadless and has been removed.
+  Loadless block "XLXI_3/dato_6" (FF) removed.
+ The signal "XLXI_3/dato<5>" is loadless and has been removed.
+  Loadless block "XLXI_3/dato_5" (FF) removed.
+ The signal "XLXI_3/dato<4>" is loadless and has been removed.
+  Loadless block "XLXI_3/dato_4" (FF) removed.
+ The signal "XLXI_3/dato<3>" is loadless and has been removed.
+  Loadless block "XLXI_3/dato_3" (FF) removed.
+ The signal "XLXI_3/dato<2>" is loadless and has been removed.
+  Loadless block "XLXI_3/dato_2" (FF) removed.
+ The signal "XLXI_3/dato<1>" is loadless and has been removed.
+  Loadless block "XLXI_3/dato_1" (FF) removed.
+ The signal "XLXI_3/dato<0>" is loadless and has been removed.
+  Loadless block "XLXI_3/dato_0" (FF) removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "XLXI_3/Tdir_addsub0000<0>" is unused and has been removed.
+ Unused block "XLXI_3/Madd_Tdir_addsub0000_xor<0>" (XOR) removed.
+The signal "XLXI_3/Tdir_mux0000<0>22/O" is unused and has been removed.
+ Unused block "XLXI_3/Tdir_mux0000<0>22" (ROM) removed.
+The signal "XLXI_3/Tdir_mux0000<10>22_SW0/O" is unused and has been removed.
+ Unused block "XLXI_3/Tdir_mux0000<10>22_SW0" (ROM) removed.
+The signal "XLXI_3/Tdir_mux0000<9>22_SW0/O" is unused and has been removed.
+ Unused block "XLXI_3/Tdir_mux0000<9>22_SW0" (ROM) removed.
+The signal "XLXI_3/Tdir_mux0000<8>22_SW0/O" is unused and has been removed.
+ Unused block "XLXI_3/Tdir_mux0000<8>22_SW0" (ROM) removed.
+The signal "XLXI_3/Tdir_mux0000<7>22_SW0/O" is unused and has been removed.
+ Unused block "XLXI_3/Tdir_mux0000<7>22_SW0" (ROM) removed.
+The signal "XLXI_3/Tdir_mux0000<6>22_SW0/O" is unused and has been removed.
+ Unused block "XLXI_3/Tdir_mux0000<6>22_SW0" (ROM) removed.
+The signal "XLXI_3/Tdir_mux0000<5>22_SW0/O" is unused and has been removed.
+ Unused block "XLXI_3/Tdir_mux0000<5>22_SW0" (ROM) removed.
+The signal "XLXI_3/Tdir_mux0000<4>22_SW0/O" is unused and has been removed.
+ Unused block "XLXI_3/Tdir_mux0000<4>22_SW0" (ROM) removed.
+The signal "XLXI_3/Tdir_mux0000<3>22_SW0/O" is unused and has been removed.
+ Unused block "XLXI_3/Tdir_mux0000<3>22_SW0" (ROM) removed.
+The signal "XLXI_3/Tdir_mux0000<2>22_SW0/O" is unused and has been removed.
+ Unused block "XLXI_3/Tdir_mux0000<2>22_SW0" (ROM) removed.
+The signal "XLXI_3/Tdir_mux0000<1>22_SW1/O" is unused and has been removed.
+ Unused block "XLXI_3/Tdir_mux0000<1>22_SW1" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XLXI_5
+VCC 		XLXI_6
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| btn                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| clk                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| dataUSB<0>                         | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| dataUSB<1>                         | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| dataUSB<2>                         | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| dataUSB<3>                         | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| dataUSB<4>                         | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| dataUSB<5>                         | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| dataUSB<6>                         | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| dataUSB<7>                         | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| leds<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds<4>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds<5>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds<6>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| leds<7>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| rd                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| rst                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| rxf                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| txe                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

@@ -1,0 +1,10 @@
+[Inputs]
+clk
+=CO[15:0]=
+[Outputs]
+wr
+sel
+=AddrRd[4:0]=
+=AddrRr[4:0]=
+=constante[7:0]=
+[BiDir]

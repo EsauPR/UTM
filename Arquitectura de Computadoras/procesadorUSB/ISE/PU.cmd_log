@@ -1,0 +1,10 @@
+vhdtdtfi -lib work ../PU.vhd -prj ISE -o PU.spl -module PU -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PU.spl C:/My_Designs/procesadorUSB/ISE/PU.sym 
+vhdtdtfi -lib work ../PU.vhd -prj ISE -o PU.spl -module PU -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PU.spl C:/My_Designs/procesadorUSB/ISE/PU.sym 
+vhdtdtfi -lib work ../PU.vhd -prj ISE -o PU.spl -module PU -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PU.spl C:/My_Designs/procesadorUSB/ISE/PU.sym 
+vhdtdtfi -lib work ../PU.vhd -prj ISE -o PU.spl -module PU -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PU.spl C:/My_Designs/procesadorUSB/ISE/PU.sym 
+vhdtdtfi -lib work ../PU.vhd -prj ISE -o PU.spl -module PU -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PU.spl C:/My_Designs/procesadorUSB/ISE/PU.sym 

@@ -1,0 +1,95 @@
+--------------------------------------------------------------------------------
+Release 12.1 Trace  (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\12.1\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml uart.twx uart.ncd -o uart.twr uart.pcf -ucf pines.ucf
+
+Design file:              uart.ncd
+Physical constraint file: uart.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2010-04-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+dataUSB<0>  |    0.852(F)|    0.444(F)|clk_BUFGP         |   0.000|
+dataUSB<1>  |    0.957(F)|    0.362(F)|clk_BUFGP         |   0.000|
+dataUSB<2>  |    0.987(F)|    0.338(F)|clk_BUFGP         |   0.000|
+dataUSB<3>  |    0.815(F)|    0.475(F)|clk_BUFGP         |   0.000|
+dataUSB<4>  |    1.019(F)|    0.314(F)|clk_BUFGP         |   0.000|
+dataUSB<5>  |    0.715(F)|    0.554(F)|clk_BUFGP         |   0.000|
+dataUSB<6>  |    1.291(F)|    0.094(F)|clk_BUFGP         |   0.000|
+dataUSB<7>  |    0.787(F)|    0.497(F)|clk_BUFGP         |   0.000|
+rd_u        |    1.343(F)|    0.558(F)|clk_BUFGP         |   0.000|
+rst         |    3.254(F)|   -0.537(F)|clk_BUFGP         |   0.000|
+rxf         |    0.865(F)|    0.436(F)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+da          |    6.551(F)|clk_BUFGP         |   0.000|
+dato<0>     |    7.602(F)|clk_BUFGP         |   0.000|
+dato<1>     |    7.512(F)|clk_BUFGP         |   0.000|
+dato<2>     |    7.421(F)|clk_BUFGP         |   0.000|
+dato<3>     |    7.284(F)|clk_BUFGP         |   0.000|
+dato<4>     |    7.913(F)|clk_BUFGP         |   0.000|
+dato<5>     |    7.345(F)|clk_BUFGP         |   0.000|
+dato<6>     |   10.225(F)|clk_BUFGP         |   0.000|
+dato<7>     |    8.787(F)|clk_BUFGP         |   0.000|
+rd          |    7.631(F)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |         |    2.929|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Thu May 07 23:15:53 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 105 MB
+
+
+

@@ -1,0 +1,28 @@
+acom $DSN/src/desplegador.vhd
+# Compile...
+# File: C:\My_Designs\procesadorUSB\test1\test1\desplegador\src\desplegador.vhd
+# Compile Entity "desplegador"
+# Entity `desplegador' has been skipped - no difference detected.
+# Compile Architecture "desplegador" of Entity "desplegador"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom $DSN/src/desplegador.vhd
+# Compile...
+# File: C:\My_Designs\procesadorUSB\test1\test1\desplegador\src\desplegador.vhd
+# Compile Entity "desplegador"
+# Error: COMP96_0018: desplegador.vhd : (36, 7): Identifier expected.
+# Compile Architecture "desplegador" of Entity "desplegador"
+# Error: COMP96_0015: desplegador.vhd : (59, 4): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom $DSN/src/desplegador.vhd
+# Compile...
+# File: C:\My_Designs\procesadorUSB\test1\test1\desplegador\src\desplegador.vhd
+# Compile Entity "desplegador"
+# Error: COMP96_0018: desplegador.vhd : (36, 7): Identifier expected.
+# Compile Architecture "desplegador" of Entity "desplegador"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom $DSN/src/desplegador.vhd
+# Compile...
+# File: C:\My_Designs\procesadorUSB\test1\test1\desplegador\src\desplegador.vhd
+# Compile Entity "desplegador"
+# Compile Architecture "desplegador" of Entity "desplegador"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]

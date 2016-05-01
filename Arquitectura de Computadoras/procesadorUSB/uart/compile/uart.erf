@@ -1,0 +1,5 @@
+MESSAGE "File: C:\My_Designs\procesadorUSB\PU.vhd" 
+MESSAGE "Compile Entity "PU"" 
+MESSAGE "Entity `PU' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "PU" of Entity "PU"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]" 

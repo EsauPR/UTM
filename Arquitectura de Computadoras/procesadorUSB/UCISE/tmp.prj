@@ -1,0 +1,4 @@
+vhdl work "ucp.vhd"
+vhdl work "uart.vhd"
+vhdl work "../uart/src/UC.vhd"
+vhdl work "tmp.vhf"

@@ -1,0 +1,7 @@
+vhdl work "../uart/src/ucp.vhd"
+vhdl work "../uart/src/UC.vhd"
+vhdl work "../uart/src/uart.vhd"
+vhdl work "../uart/src/MUX.vhd"
+vhdl work "../PU.vhd"
+vhdl work "../AR.vhd"
+vhdl work "top.vhf"

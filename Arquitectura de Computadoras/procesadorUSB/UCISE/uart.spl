@@ -1,0 +1,12 @@
+[Inputs]
+rxf
+txe
+rd_u
+clk
+rst
+=dataUSB[7:0]=
+[Outputs]
+rd
+da
+=dato[7:0]=
+[BiDir]

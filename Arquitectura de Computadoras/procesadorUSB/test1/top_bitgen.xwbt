@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\My_Designs\procesadorUSB\test1\top.ncd
+OUTFILE=C:\My_Designs\procesadorUSB\test1\top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=C:\My_Designs\procesadorUSB\test1
+LICENSE=WebPack
+USER_INFO=__0_0_0

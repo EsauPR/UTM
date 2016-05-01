@@ -1,0 +1,23 @@
+V3 19
+FL C:/My_Designs/procesadorUSB/uart/src/UC.vhd 2015/05/08.21:05:48 M.53d
+EN work/UC 1431137183 FL C:/My_Designs/procesadorUSB/uart/src/UC.vhd \
+      PB ieee/std_logic_1164 1270894585 PB ieee/STD_LOGIC_UNSIGNED 1270894587
+AR work/UC/UC 1431137184 \
+      FL C:/My_Designs/procesadorUSB/uart/src/UC.vhd EN work/UC 1431137183
+FL C:/My_Designs/procesadorUSB/UCISE/tmp.vhf 2015/05/08.21:06:22 M.53d
+EN work/tmp 1431137189 FL C:/My_Designs/procesadorUSB/UCISE/tmp.vhf \
+      PB ieee/std_logic_1164 1270894585 PB ieee/NUMERIC_STD 1270894586 LB UNISIM \
+      PH unisim/VCOMPONENTS 1270894587
+AR work/tmp/BEHAVIORAL 1431137190 \
+      FL C:/My_Designs/procesadorUSB/UCISE/tmp.vhf EN work/tmp 1431137189 CP UC \
+      CP uart CP ucp CP RAMB16_S9_S18 CP GND CP VCC
+FL C:/My_Designs/procesadorUSB/UCISE/uart.vhd 2015/05/08.20:43:28 M.53d
+EN work/uart 1431137185 FL C:/My_Designs/procesadorUSB/UCISE/uart.vhd \
+      PB ieee/std_logic_1164 1270894585
+AR work/uart/uart 1431137186 \
+      FL C:/My_Designs/procesadorUSB/UCISE/uart.vhd EN work/uart 1431137185
+FL C:/My_Designs/procesadorUSB/UCISE/ucp.vhd 2015/05/08.13:19:13 M.53d
+EN work/ucp 1431137187 FL C:/My_Designs/procesadorUSB/UCISE/ucp.vhd \
+      PB ieee/std_logic_1164 1270894585 PB ieee/STD_LOGIC_UNSIGNED 1270894587
+AR work/ucp/ucp 1431137188 \
+      FL C:/My_Designs/procesadorUSB/UCISE/ucp.vhd EN work/ucp 1431137187

@@ -1,0 +1,4 @@
+MESSAGE "File: C:\My_Designs\procesadorUSB\test1\test1\desplegador\src\desplegador.vhd" 
+MESSAGE "Compile Entity "desplegador"" 
+MESSAGE "Compile Architecture "desplegador" of Entity "desplegador"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]" 

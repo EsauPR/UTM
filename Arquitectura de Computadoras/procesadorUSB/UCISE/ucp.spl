@@ -1,0 +1,12 @@
+[Inputs]
+DA
+clk
+rst
+=datoRX[7:0]=
+[Outputs]
+WR
+P_OK
+RD
+=dato[7:0]=
+=dir[10:0]=
+[BiDir]

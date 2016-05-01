@@ -1,0 +1,20 @@
+V3 12
+FL C:/My_Designs/procesadorUSB/test1/test1/desplegador/src/desplegador.vhd 2015/05/12.20:45:06 M.53d
+EN work/desplegador 1431481675 \
+      FL C:/My_Designs/procesadorUSB/test1/test1/desplegador/src/desplegador.vhd \
+      PB ieee/std_logic_1164 1270894585
+AR work/desplegador/desplegador 1431481676 \
+      FL C:/My_Designs/procesadorUSB/test1/test1/desplegador/src/desplegador.vhd \
+      EN work/desplegador 1431481675
+FL C:/My_Designs/procesadorUSB/test1/top.vhf 2015/05/12.20:47:36 M.53d
+EN work/top 1431481677 FL C:/My_Designs/procesadorUSB/test1/top.vhf \
+      PB ieee/std_logic_1164 1270894585 PB ieee/NUMERIC_STD 1270894586 LB UNISIM \
+      PH unisim/VCOMPONENTS 1270894587
+AR work/top/BEHAVIORAL 1431481678 \
+      FL C:/My_Designs/procesadorUSB/test1/top.vhf EN work/top 1431481677 CP uart \
+      CP desplegador
+FL C:/My_Designs/procesadorUSB/test1/uart.vhd 2015/05/12.20:47:49 M.53d
+EN work/uart 1431481673 FL C:/My_Designs/procesadorUSB/test1/uart.vhd \
+      PB ieee/std_logic_1164 1270894585
+AR work/uart/uart 1431481674 \
+      FL C:/My_Designs/procesadorUSB/test1/uart.vhd EN work/uart 1431481673

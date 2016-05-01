@@ -1,0 +1,6 @@
+[Inputs]
+da
+clk
+[Outputs]
+rd_u
+[BiDir]

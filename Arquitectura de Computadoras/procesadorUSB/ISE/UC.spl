@@ -1,0 +1,9 @@
+[Inputs]
+clk
+rst
+P_OK
+=IR[15:0]=
+[Outputs]
+=dato[15:0]=
+=PC[9:0]=
+[BiDir]

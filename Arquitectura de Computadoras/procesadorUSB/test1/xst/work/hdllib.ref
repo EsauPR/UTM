@@ -1,0 +1,6 @@
+AR uart uart C:/My_Designs/procesadorUSB/test1/uart.vhd sub00/vhpl01 1431481674
+EN desplegador NULL C:/My_Designs/procesadorUSB/test1/test1/desplegador/src/desplegador.vhd sub00/vhpl02 1431481675
+AR desplegador desplegador C:/My_Designs/procesadorUSB/test1/test1/desplegador/src/desplegador.vhd sub00/vhpl03 1431481676
+EN top NULL C:/My_Designs/procesadorUSB/test1/top.vhf sub00/vhpl04 1431481677
+AR top behavioral C:/My_Designs/procesadorUSB/test1/top.vhf sub00/vhpl05 1431481678
+EN uart NULL C:/My_Designs/procesadorUSB/test1/uart.vhd sub00/vhpl00 1431481673

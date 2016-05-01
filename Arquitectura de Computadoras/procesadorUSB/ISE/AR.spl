@@ -1,0 +1,10 @@
+[Inputs]
+clk
+ctr
+=AddrRd[4:0]=
+=AddrRr[4:0]=
+=DataIn[7:0]=
+[Outputs]
+=Rr[7:0]=
+=Rd[7:0]=
+[BiDir]

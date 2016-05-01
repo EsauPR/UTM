@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym memory C:/My_Designs/procesadorUSB/ISE/memory.sch C:/My_Designs/procesadorUSB/ISE/memory.sym 

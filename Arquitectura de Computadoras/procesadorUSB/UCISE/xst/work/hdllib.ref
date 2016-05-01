@@ -1,0 +1,8 @@
+AR uart uart C:/My_Designs/procesadorUSB/UCISE/uart.vhd sub00/vhpl05 1431137186
+AR ucp ucp C:/My_Designs/procesadorUSB/UCISE/ucp.vhd sub00/vhpl07 1431137188
+EN ucp NULL C:/My_Designs/procesadorUSB/UCISE/ucp.vhd sub00/vhpl06 1431137187
+EN tmp NULL C:/My_Designs/procesadorUSB/UCISE/tmp.vhf sub00/vhpl02 1431137189
+EN uc NULL C:/My_Designs/procesadorUSB/uart/src/UC.vhd sub00/vhpl00 1431137183
+AR tmp behavioral C:/My_Designs/procesadorUSB/UCISE/tmp.vhf sub00/vhpl03 1431137190
+EN uart NULL C:/My_Designs/procesadorUSB/UCISE/uart.vhd sub00/vhpl04 1431137185
+AR uc uc C:/My_Designs/procesadorUSB/uart/src/UC.vhd sub00/vhpl01 1431137184

@@ -1,0 +1,687 @@
+Release 12.1 - xst M.53d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : top.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/My_Designs/procesadorUSB/uart/src/uart.vhd" in Library work.
+Architecture uart of Entity uart is up to date.
+Compiling vhdl file "C:/My_Designs/procesadorUSB/uart/src/ucp.vhd" in Library work.
+Architecture ucp of Entity ucp is up to date.
+Compiling vhdl file "C:/My_Designs/procesadorUSB/uart/src/UC.vhd" in Library work.
+Entity <uc> compiled.
+Entity <uc> (Architecture <uc>) compiled.
+Compiling vhdl file "C:/My_Designs/procesadorUSB/AR.vhd" in Library work.
+Architecture ar of Entity ar is up to date.
+Compiling vhdl file "C:/My_Designs/procesadorUSB/uart/src/MUX.vhd" in Library work.
+Architecture mux of Entity mux is up to date.
+Compiling vhdl file "C:/My_Designs/procesadorUSB/PU.vhd" in Library work.
+Architecture pu of Entity pu is up to date.
+Compiling vhdl file "C:/My_Designs/procesadorUSB/ISE/top.vhf" in Library work.
+Entity <top> compiled.
+Entity <top> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <uart> in library <work> (architecture <uart>).
+
+Analyzing hierarchy for entity <ucp> in library <work> (architecture <ucp>).
+
+Analyzing hierarchy for entity <UC> in library <work> (architecture <uc>).
+
+Analyzing hierarchy for entity <AR> in library <work> (architecture <ar>).
+
+Analyzing hierarchy for entity <MUX> in library <work> (architecture <mux>).
+
+Analyzing hierarchy for entity <PU> in library <work> (architecture <pu>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000111111" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_01 =  0200020002000200020002000200020002000200020002000200020002000200" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_02 =  0300030003000300030003000300030003000300030003000300030003000300" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_3F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_A =  000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "INIT_B =  00000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "SIM_COLLISION_CHECK =  ALL" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "SRVAL_A =  000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "SRVAL_B =  00000" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <XLXI_4> in unit <top>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <XLXI_4> in unit <top>.
+WARNING:Xst:753 - "C:/My_Designs/procesadorUSB/ISE/top.vhf" line 609: Unconnected output port 'Rd' of component 'AR'.
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <uart> in library <work> (Architecture <uart>).
+Entity <uart> analyzed. Unit <uart> generated.
+
+Analyzing Entity <ucp> in library <work> (Architecture <ucp>).
+Entity <ucp> analyzed. Unit <ucp> generated.
+
+Analyzing Entity <UC> in library <work> (Architecture <uc>).
+Entity <UC> analyzed. Unit <UC> generated.
+
+Analyzing Entity <AR> in library <work> (Architecture <ar>).
+Entity <AR> analyzed. Unit <AR> generated.
+
+Analyzing Entity <MUX> in library <work> (Architecture <mux>).
+Entity <MUX> analyzed. Unit <MUX> generated.
+
+Analyzing Entity <PU> in library <work> (Architecture <pu>).
+Entity <PU> analyzed. Unit <PU> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <uart>.
+    Related source file is "C:/My_Designs/procesadorUSB/uart/src/uart.vhd".
+WARNING:Xst:647 - Input <txe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <dato>.
+    Found 1-bit register for signal <da>.
+    Found 1-bit register for signal <rd>.
+    Found 8-bit 8-to-1 multiplexer for signal <dato$mux0000> created at line 63.
+    Found 3-bit register for signal <edo>.
+    Found 3-bit adder for signal <edo$addsub0000> created at line 72.
+    Found 3-bit 8-to-1 multiplexer for signal <edo$mux0000> created at line 63.
+    Summary:
+	inferred  13 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 Multiplexer(s).
+Unit <uart> synthesized.
+
+
+Synthesizing Unit <ucp>.
+    Related source file is "C:/My_Designs/procesadorUSB/uart/src/ucp.vhd".
+WARNING:Xst:646 - Signal <H<7:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <edo>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk                       (falling_edge)       |
+    | Clock enable       | TDA                       (positive)           |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <edoWR>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (falling_edge)       |
+    | Clock enable       | edoWR$not0000             (positive)           |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <dato>.
+    Found 1-bit register for signal <RD>.
+    Found 1-bit register for signal <P_OK>.
+    Found 1-bit register for signal <WR>.
+    Found 8-bit register for signal <cont>.
+    Found 8-bit subtractor for signal <cont$addsub0000> created at line 125.
+    Found 8-bit register for signal <H>.
+    Found 1-bit register for signal <TDA>.
+    Found 8-bit register for signal <TDato>.
+    Found 11-bit register for signal <Tdir>.
+    Found 11-bit adder for signal <Tdir$addsub0000> created at line 136.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred  47 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <ucp> synthesized.
+
+
+Synthesizing Unit <UC>.
+    Related source file is "C:/My_Designs/procesadorUSB/uart/src/UC.vhd".
+    Found 16-bit register for signal <dato>.
+    Found 26-bit up counter for signal <C>.
+    Found 10-bit up counter for signal <TPC>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  16 D-type flip-flop(s).
+Unit <UC> synthesized.
+
+
+Synthesizing Unit <AR>.
+    Related source file is "C:/My_Designs/procesadorUSB/AR.vhd".
+    Found 32x8-bit dual-port RAM <Mram_AR> for signal <AR>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <AR> synthesized.
+
+
+Synthesizing Unit <MUX>.
+    Related source file is "C:/My_Designs/procesadorUSB/uart/src/MUX.vhd".
+Unit <MUX> synthesized.
+
+
+Synthesizing Unit <PU>.
+    Related source file is "C:/My_Designs/procesadorUSB/PU.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <PU> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "C:/My_Designs/procesadorUSB/ISE/top.vhf".
+WARNING:Xst:653 - Signal <XLXI_4_DIPB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <XLXI_4_DIPA_openSignal<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_4_DIB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+Unit <top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x8-bit dual-port RAM                                : 1
+# Adders/Subtractors                                   : 3
+ 11-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 2
+ 10-bit up counter                                     : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 14
+ 1-bit register                                        : 6
+ 11-bit register                                       : 1
+ 16-bit register                                       : 1
+ 3-bit register                                        : 1
+ 8-bit register                                        : 5
+# Multiplexers                                         : 2
+ 3-bit 8-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <XLXI_2/edoWR/FSM> on signal <edoWR[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 0001
+ 001   | 0010
+ 010   | 0100
+ 011   | 1000
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <XLXI_2/edo/FSM> on signal <edo[1:5]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00001
+ 001   | 00010
+ 010   | 00100
+ 011   | 01000
+ 100   | 10000
+-------------------
+WARNING:Xst:2677 - Node <H_3> of sequential type is unconnected in block <XLXI_2>.
+WARNING:Xst:2677 - Node <H_4> of sequential type is unconnected in block <XLXI_2>.
+WARNING:Xst:2677 - Node <H_5> of sequential type is unconnected in block <XLXI_2>.
+WARNING:Xst:2677 - Node <H_6> of sequential type is unconnected in block <XLXI_2>.
+WARNING:Xst:2677 - Node <H_7> of sequential type is unconnected in block <XLXI_2>.
+
+Synthesizing (advanced) Unit <AR>.
+INFO:Xst:3048 - The small RAM <Mram_AR> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <clk>           | fall     |
+    |     weA            | connected to signal <ctr>           | high     |
+    |     addrA          | connected to signal <AddrRd>        |          |
+    |     diA            | connected to signal <DataIn>        |          |
+    |     doA            | connected to signal <Rd>            |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     addrB          | connected to signal <AddrRr>        |          |
+    |     doB            | connected to signal <Rr>            |          |
+    -----------------------------------------------------------------------
+Unit <AR> synthesized (advanced).
+WARNING:Xst:2677 - Node <H_3> of sequential type is unconnected in block <ucp>.
+WARNING:Xst:2677 - Node <H_4> of sequential type is unconnected in block <ucp>.
+WARNING:Xst:2677 - Node <H_5> of sequential type is unconnected in block <ucp>.
+WARNING:Xst:2677 - Node <H_6> of sequential type is unconnected in block <ucp>.
+WARNING:Xst:2677 - Node <H_7> of sequential type is unconnected in block <ucp>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# RAMs                                                 : 1
+ 32x8-bit dual-port distributed RAM                    : 1
+# Adders/Subtractors                                   : 3
+ 11-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 2
+ 10-bit up counter                                     : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 71
+ Flip-Flops                                            : 71
+# Multiplexers                                         : 2
+ 3-bit 8-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top> ...
+
+Optimizing unit <uart> ...
+
+Optimizing unit <ucp> ...
+
+Optimizing unit <UC> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 116
+ Flip-Flops                                            : 116
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 21
+
+Cell Usage :
+# BELS                             : 311
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 44
+#      LUT2                        : 25
+#      LUT2_L                      : 1
+#      LUT3                        : 40
+#      LUT3_D                      : 1
+#      LUT3_L                      : 12
+#      LUT4                        : 60
+#      LUT4_D                      : 9
+#      LUT4_L                      : 4
+#      MUXCY                       : 49
+#      MUXF5                       : 13
+#      VCC                         : 1
+#      XORCY                       : 47
+# FlipFlops/Latches                : 116
+#      FDC                         : 26
+#      FDCE                        : 10
+#      FDE_1                       : 55
+#      FDR_1                       : 3
+#      FDRE_1                      : 11
+#      FDS_1                       : 9
+#      FDSE_1                      : 2
+# RAMS                             : 17
+#      RAM16X1D                    : 16
+#      RAMB16_S9_S18               : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 10
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      119  out of   4656     2%  
+ Number of Slice Flip Flops:            116  out of   9312     1%  
+ Number of 4 input LUTs:                232  out of   9312     2%  
+    Number used as logic:               200
+    Number used as RAMs:                 32
+ Number of IOs:                          21
+ Number of bonded IOBs:                  20  out of    232     8%  
+ Number of BRAMs:                         1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 133   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------+------------------------+-------+
+Control Signal                                 | Buffer(FF name)        | Load  |
+-----------------------------------------------+------------------------+-------+
+XLXI_3/C_cmp_eq0000(XLXI_3/C_cmp_eq000029_f5:O)| NONE(XLXI_3/C_0)       | 26    |
+rst                                            | IBUF                   | 10    |
+-----------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.122ns (Maximum Frequency: 163.345MHz)
+   Minimum input arrival time before clock: 5.196ns
+   Maximum output required time after clock: 7.176ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.122ns (frequency: 163.345MHz)
+  Total number of paths / destination ports: 2315 / 384
+-------------------------------------------------------------------------
+Delay:               3.061ns (Levels of Logic = 0)
+  Source:            XLXI_4 (RAM)
+  Destination:       XLXI_3/dato_15 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk falling
+
+  Data Path: XLXI_4 to XLXI_3/dato_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S9_S18:CLKB->DOB7    1   2.436   0.357  XLXI_4 (XLXN_104<7>)
+     FDE_1:D                   0.268          XLXI_3/dato_15
+    ----------------------------------------
+    Total                      3.061ns (2.704ns logic, 0.357ns route)
+                                       (88.3% logic, 11.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 89 / 89
+-------------------------------------------------------------------------
+Offset:              5.196ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       XLXI_3/dato_15 (FF)
+  Destination Clock: clk falling
+
+  Data Path: rst to XLXI_3/dato_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            41   1.106   1.144  rst_IBUF (rst_IBUF)
+     LUT2:I1->O            1   0.612   0.360  XLXI_3/seg_cmp_eq000022_SW0 (N43)
+     LUT4:I3->O           16   0.612   0.879  XLXI_3/dato_and00001 (XLXI_3/dato_and0000)
+     FDE_1:CE                  0.483          XLXI_3/dato_0
+    ----------------------------------------
+    Total                      5.196ns (2.813ns logic, 2.383ns route)
+                                       (54.1% logic, 45.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 163 / 9
+-------------------------------------------------------------------------
+Offset:              7.176ns (Levels of Logic = 4)
+  Source:            XLXI_3/dato_12 (FF)
+  Destination:       leds<7> (PAD)
+  Source Clock:      clk falling
+
+  Data Path: XLXI_3/dato_12 to leds<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            1   0.514   0.509  XLXI_3/dato_12 (XLXI_3/dato_12)
+     LUT4_D:I0->O         16   0.612   1.031  XLXI_9/SALIDA<0>11 (N0)
+     LUT3:I0->O            1   0.612   0.000  XLXI_9/SALIDA<7>1 (XLXI_9/SALIDA<7>)
+     MUXF5:I1->O           3   0.278   0.451  XLXI_9/SALIDA<7>_f5 (leds_7_OBUF)
+     OBUF:I->O                 3.169          leds_7_OBUF (leds<7>)
+    ----------------------------------------
+    Total                      7.176ns (5.185ns logic, 1.991ns route)
+                                       (72.3% logic, 27.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.76 secs
+ 
+--> 
+
+Total memory usage is 155772 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

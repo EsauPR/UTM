@@ -1,0 +1,6 @@
+vhdtdtfi -lib work test1/desplegador/src/desplegador.vhd -prj test1 -o desplegador.spl -module desplegador -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e desplegador.spl C:/My_Designs/procesadorUSB/test1/desplegador.sym 
+vhdtdtfi -lib work test1/desplegador/src/desplegador.vhd -prj test1 -o desplegador.spl -module desplegador -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e desplegador.spl C:/My_Designs/procesadorUSB/test1/desplegador.sym 
+vhdtdtfi -lib work test1/desplegador/src/desplegador.vhd -prj test1 -o desplegador.spl -module desplegador -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e desplegador.spl C:/My_Designs/procesadorUSB/test1/desplegador.sym 

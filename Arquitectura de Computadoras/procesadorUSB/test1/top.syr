@@ -1,0 +1,453 @@
+Release 12.1 - xst M.53d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : top.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/My_Designs/procesadorUSB/test1/uart.vhd" in Library work.
+Entity <uart> compiled.
+Entity <uart> (Architecture <uart>) compiled.
+Compiling vhdl file "C:/My_Designs/procesadorUSB/test1/test1/desplegador/src/desplegador.vhd" in Library work.
+Entity <desplegador> compiled.
+Entity <desplegador> (Architecture <desplegador>) compiled.
+Compiling vhdl file "C:/My_Designs/procesadorUSB/test1/top.vhf" in Library work.
+Entity <top> compiled.
+Entity <top> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <uart> in library <work> (architecture <uart>).
+
+Analyzing hierarchy for entity <desplegador> in library <work> (architecture <desplegador>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top> in library <work> (Architecture <behavioral>).
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <uart> in library <work> (Architecture <uart>).
+Entity <uart> analyzed. Unit <uart> generated.
+
+Analyzing Entity <desplegador> in library <work> (Architecture <desplegador>).
+WARNING:Xst:819 - "C:/My_Designs/procesadorUSB/test1/test1/desplegador/src/desplegador.vhd" line 50: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <da>, <seg>
+Entity <desplegador> analyzed. Unit <desplegador> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <uart>.
+    Related source file is "C:/My_Designs/procesadorUSB/test1/uart.vhd".
+WARNING:Xst:647 - Input <txe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <dato>.
+    Found 1-bit register for signal <da>.
+    Found 1-bit register for signal <rd>.
+    Found 3-bit register for signal <edo>.
+    Found 3-bit adder for signal <edo$addsub0000> created at line 71.
+    Found 3-bit 8-to-1 multiplexer for signal <edo$mux0000> created at line 62.
+    Summary:
+	inferred  13 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Multiplexer(s).
+Unit <uart> synthesized.
+
+
+Synthesizing Unit <desplegador>.
+    Related source file is "C:/My_Designs/procesadorUSB/test1/test1/desplegador/src/desplegador.vhd".
+WARNING:Xst:1780 - Signal <tmp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 1-bit latch for signal <rd_u>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 26-bit up counter for signal <C>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <desplegador> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "C:/My_Designs/procesadorUSB/test1/top.vhf".
+Unit <top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 3-bit adder                                           : 1
+# Counters                                             : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 4
+ 1-bit register                                        : 2
+ 3-bit register                                        : 1
+ 8-bit register                                        : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Multiplexers                                         : 1
+ 3-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 3-bit adder                                           : 1
+# Counters                                             : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Multiplexers                                         : 1
+ 3-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top> ...
+
+Optimizing unit <uart> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 39
+ Flip-Flops                                            : 39
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 21
+
+Cell Usage :
+# BELS                             : 105
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 25
+#      LUT2                        : 3
+#      LUT3                        : 2
+#      LUT4                        : 10
+#      LUT4_L                      : 1
+#      MUXCY                       : 30
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 40
+#      FDC                         : 26
+#      FDR_1                       : 3
+#      FDRE_1                      : 9
+#      FDS_1                       : 1
+#      LD                          : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 10
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       28  out of   4656     0%  
+ Number of Slice Flip Flops:             40  out of   9312     0%  
+ Number of 4 input LUTs:                 43  out of   9312     0%  
+ Number of IOs:                          21
+ Number of bonded IOBs:                  20  out of    232     8%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+XLXI_1/da                          | NONE(XLXI_2/rd_u)      | 1     |
+clk                                | BUFGP                  | 39    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------+------------------------+-------+
+Control Signal                                 | Buffer(FF name)        | Load  |
+-----------------------------------------------+------------------------+-------+
+XLXI_2/C_cmp_eq0000(XLXI_2/C_cmp_eq000029_f5:O)| NONE(XLXI_2/C_0)       | 26    |
+-----------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.285ns (Maximum Frequency: 233.380MHz)
+   Minimum input arrival time before clock: 3.127ns
+   Maximum output required time after clock: 4.063ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.285ns (frequency: 233.380MHz)
+  Total number of paths / destination ports: 391 / 40
+-------------------------------------------------------------------------
+Delay:               4.285ns (Levels of Logic = 26)
+  Source:            XLXI_2/C_1 (FF)
+  Destination:       XLXI_2/C_25 (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk falling
+
+  Data Path: XLXI_2/C_1 to XLXI_2/C_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.514   0.603  XLXI_2/C_1 (XLXI_2/C_1)
+     LUT1:I0->O            1   0.612   0.000  XLXI_2/Mcount_C_cy<1>_rt (XLXI_2/Mcount_C_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  XLXI_2/Mcount_C_cy<1> (XLXI_2/Mcount_C_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Mcount_C_cy<2> (XLXI_2/Mcount_C_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Mcount_C_cy<3> (XLXI_2/Mcount_C_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_2/Mcount_C_cy<4> (XLXI_2/Mcount_C_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<5> (XLXI_2/Mcount_C_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<6> (XLXI_2/Mcount_C_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<7> (XLXI_2/Mcount_C_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<8> (XLXI_2/Mcount_C_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<9> (XLXI_2/Mcount_C_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<10> (XLXI_2/Mcount_C_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<11> (XLXI_2/Mcount_C_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<12> (XLXI_2/Mcount_C_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<13> (XLXI_2/Mcount_C_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<14> (XLXI_2/Mcount_C_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<15> (XLXI_2/Mcount_C_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<16> (XLXI_2/Mcount_C_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<17> (XLXI_2/Mcount_C_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<18> (XLXI_2/Mcount_C_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<19> (XLXI_2/Mcount_C_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<20> (XLXI_2/Mcount_C_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<21> (XLXI_2/Mcount_C_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<22> (XLXI_2/Mcount_C_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_2/Mcount_C_cy<23> (XLXI_2/Mcount_C_cy<23>)
+     MUXCY:CI->O           0   0.051   0.000  XLXI_2/Mcount_C_cy<24> (XLXI_2/Mcount_C_cy<24>)
+     XORCY:CI->O           1   0.699   0.000  XLXI_2/Mcount_C_xor<25> (Result<25>)
+     FDC:D                     0.268          XLXI_2/C_25
+    ----------------------------------------
+    Total                      4.285ns (3.682ns logic, 0.603ns route)
+                                       (85.9% logic, 14.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 22 / 22
+-------------------------------------------------------------------------
+Offset:              3.127ns (Levels of Logic = 3)
+  Source:            rxf (PAD)
+  Destination:       XLXI_1/edo_0 (FF)
+  Destination Clock: clk falling
+
+  Data Path: rxf to XLXI_1/edo_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.360  rxf_IBUF (rxf_IBUF)
+     LUT4_L:I3->LO         1   0.612   0.169  XLXI_1/edo_mux0000<2>_inv1_SW0 (N3)
+     LUT2:I1->O            1   0.612   0.000  XLXI_1/edo_mux0000<2>_inv1 (XLXI_1/edo_mux0000<2>)
+     FDR_1:D                   0.268          XLXI_1/edo_0
+    ----------------------------------------
+    Total                      3.127ns (2.598ns logic, 0.529ns route)
+                                       (83.1% logic, 16.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              4.063ns (Levels of Logic = 1)
+  Source:            XLXI_1/rd (FF)
+  Destination:       rd (PAD)
+  Source Clock:      clk falling
+
+  Data Path: XLXI_1/rd to rd
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS_1:C->Q            2   0.514   0.380  XLXI_1/rd (XLXI_1/rd)
+     OBUF:I->O                 3.169          rd_OBUF (rd)
+    ----------------------------------------
+    Total                      4.063ns (3.683ns logic, 0.380ns route)
+                                       (90.6% logic, 9.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.47 secs
+ 
+--> 
+
+Total memory usage is 140412 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

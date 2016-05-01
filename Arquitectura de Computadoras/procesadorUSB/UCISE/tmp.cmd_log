@@ -1,0 +1,56 @@
+xst -intstyle ise -ifn "C:/My_Designs/procesadorUSB/UCISE/tmp.xst" -ofn "C:/My_Designs/procesadorUSB/UCISE/tmp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s500e-fg320-5 tmp.ngc tmp.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s500e-fg320-5 tmp.ngc tmp.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o tmp_map.ncd tmp.ngd tmp.pcf 
+par -w -intstyle ise -ol high -t 1 tmp_map.ncd tmp.ncd tmp.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml tmp.twx tmp.ncd -o tmp.twr tmp.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f tmp.ut tmp.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/procesadorUSB/UCISE/tmp.xst" -ofn "C:/My_Designs/procesadorUSB/UCISE/tmp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s500e-fg320-5 tmp.ngc tmp.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s500e-fg320-5 tmp.ngc tmp.ngd  
+xst -intstyle ise -ifn "C:/My_Designs/procesadorUSB/UCISE/tmp.xst" -ofn "C:/My_Designs/procesadorUSB/UCISE/tmp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s500e-fg320-5 tmp.ngc tmp.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o tmp_map.ncd tmp.ngd tmp.pcf 
+par -w -intstyle ise -ol high -t 1 tmp_map.ncd tmp.ncd tmp.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml tmp.twx tmp.ncd -o tmp.twr tmp.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f tmp.ut tmp.ncd 
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o tmp_map.ncd tmp.ngd tmp.pcf 
+par -w -intstyle ise -ol high -t 1 tmp_map.ncd tmp.ncd tmp.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml tmp.twx tmp.ncd -o tmp.twr tmp.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f tmp.ut tmp.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/procesadorUSB/UCISE/tmp.xst" -ofn "C:/My_Designs/procesadorUSB/UCISE/tmp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s500e-fg320-5 tmp.ngc tmp.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o tmp_map.ncd tmp.ngd tmp.pcf 
+par -w -intstyle ise -ol high -t 1 tmp_map.ncd tmp.ncd tmp.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml tmp.twx tmp.ncd -o tmp.twr tmp.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f tmp.ut tmp.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/procesadorUSB/UCISE/tmp.xst" -ofn "C:/My_Designs/procesadorUSB/UCISE/tmp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s500e-fg320-5 tmp.ngc tmp.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o tmp_map.ncd tmp.ngd tmp.pcf 
+par -w -intstyle ise -ol high -t 1 tmp_map.ncd tmp.ncd tmp.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml tmp.twx tmp.ncd -o tmp.twr tmp.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f tmp.ut tmp.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/procesadorUSB/UCISE/tmp.xst" -ofn "C:/My_Designs/procesadorUSB/UCISE/tmp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s500e-fg320-5 tmp.ngc tmp.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o tmp_map.ncd tmp.ngd tmp.pcf 
+par -w -intstyle ise -ol high -t 1 tmp_map.ncd tmp.ncd tmp.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml tmp.twx tmp.ncd -o tmp.twr tmp.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f tmp.ut tmp.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/procesadorUSB/UCISE/tmp.xst" -ofn "C:/My_Designs/procesadorUSB/UCISE/tmp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s500e-fg320-5 tmp.ngc tmp.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o tmp_map.ncd tmp.ngd tmp.pcf 
+par -w -intstyle ise -ol high -t 1 tmp_map.ncd tmp.ncd tmp.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml tmp.twx tmp.ncd -o tmp.twr tmp.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f tmp.ut tmp.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/procesadorUSB/UCISE/tmp.xst" -ofn "C:/My_Designs/procesadorUSB/UCISE/tmp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s500e-fg320-5 tmp.ngc tmp.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o tmp_map.ncd tmp.ngd tmp.pcf 
+par -w -intstyle ise -ol high -t 1 tmp_map.ncd tmp.ncd tmp.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml tmp.twx tmp.ncd -o tmp.twr tmp.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f tmp.ut tmp.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/procesadorUSB/UCISE/tmp.xst" -ofn "C:/My_Designs/procesadorUSB/UCISE/tmp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s500e-fg320-5 tmp.ngc tmp.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o tmp_map.ncd tmp.ngd tmp.pcf 
+par -w -intstyle ise -ol high -t 1 tmp_map.ncd tmp.ncd tmp.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml tmp.twx tmp.ncd -o tmp.twr tmp.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f tmp.ut tmp.ncd 

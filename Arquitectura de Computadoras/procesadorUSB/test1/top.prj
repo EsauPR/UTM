@@ -1,0 +1,3 @@
+vhdl work "uart.vhd"
+vhdl work "test1/desplegador/src/desplegador.vhd"
+vhdl work "top.vhf"

@@ -1,0 +1,1 @@
+-w -s "C:\My_Designs\procesadorUSB\test1\test1\library.cfg"  -j "C:\My_Designs\procesadorUSB\test1\test1\desplegador\projlib.cfg"  -d "C:\My_Designs\procesadorUSB\test1\test1\desplegador\compile\"  -work desplegador -dbg -e 100 "C:\My_Designs\procesadorUSB\test1\test1\desplegador\src\desplegador.vhd" 

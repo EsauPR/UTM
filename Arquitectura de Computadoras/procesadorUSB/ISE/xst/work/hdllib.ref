@@ -1,0 +1,16 @@
+AR uart uart C:/My_Designs/procesadorUSB/uart/src/uart.vhd sub00/vhpl01 1432693606
+EN ar NULL C:/My_Designs/procesadorUSB/AR.vhd sub00/vhpl10 1432693611
+AR ucp ucp C:/My_Designs/procesadorUSB/uart/src/ucp.vhd sub00/vhpl03 1432693608
+AR mux mux C:/My_Designs/procesadorUSB/uart/src/MUX.vhd sub00/vhpl13 1432693614
+EN ucp NULL C:/My_Designs/procesadorUSB/uart/src/ucp.vhd sub00/vhpl02 1432693607
+EN desplegador NULL C:/My_Designs/procesadorUSB/ISE/desplegador.vhd sub00/vhpl08 1431653283
+AR pu pu C:/My_Designs/procesadorUSB/PU.vhd sub00/vhpl15 1432693616
+AR desplegador desplegador C:/My_Designs/procesadorUSB/ISE/desplegador.vhd sub00/vhpl09 1431653284
+AR ar ar C:/My_Designs/procesadorUSB/AR.vhd sub00/vhpl11 1432693612
+EN top NULL C:/My_Designs/procesadorUSB/ISE/top.vhf sub00/vhpl06 1432693617
+EN pu NULL C:/My_Designs/procesadorUSB/PU.vhd sub00/vhpl14 1432693615
+EN uc NULL C:/My_Designs/procesadorUSB/uart/src/UC.vhd sub00/vhpl04 1432693609
+AR top behavioral C:/My_Designs/procesadorUSB/ISE/top.vhf sub00/vhpl07 1432693618
+EN mux NULL C:/My_Designs/procesadorUSB/uart/src/MUX.vhd sub00/vhpl12 1432693613
+EN uart NULL C:/My_Designs/procesadorUSB/uart/src/uart.vhd sub00/vhpl00 1432693605
+AR uc uc C:/My_Designs/procesadorUSB/uart/src/UC.vhd sub00/vhpl05 1432693610

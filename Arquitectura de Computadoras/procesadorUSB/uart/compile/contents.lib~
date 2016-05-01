@@ -1,0 +1,13 @@
+196
+~E 1 "./src/uart.vhd" 30 uart
+~A 1 "./src/uart.vhd" 49 uart
+~E 1 "./src/MUX.vhd" 30 mux
+~A 1 "./src/MUX.vhd" 41 mux
+~E 1 "./../AR.vhd" 30 ar
+~A 1 "./../AR.vhd" 45 ar
+~E 1 "./../PU.vhd" 30 pu
+~A 1 "./../PU.vhd" 44 pu
+~E 1 "./src/UC.vhd" 30 uc
+~A 1 "./src/UC.vhd" 44 uc
+~E 1 "./src/ucp.vhd" 31 ucp
+~A 1 "./src/ucp.vhd" 47 ucp

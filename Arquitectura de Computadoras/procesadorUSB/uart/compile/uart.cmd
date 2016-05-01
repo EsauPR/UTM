@@ -1,0 +1,1 @@
+-w -s "C:\My_Designs\procesadorUSB\library.cfg"  -j "C:\My_Designs\procesadorUSB\uart\projlib.cfg"  -d "C:\My_Designs\procesadorUSB\uart\compile\"  -work uart -dbg -e 100 "C:\My_Designs\procesadorUSB\PU.vhd" 

@@ -1,0 +1,49 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=uart
+
+[Library]
+uart=.\uart.lib
+
+[$LibMap$]
+uart=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+FAMILY=
+FLOWTOOLS=ONLY_IMPL
+
+[IMPLEMENTATION]
+UCF=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/uart.vhd=-1
+/ucp.vhd=-1
+/UC.vhd=-1
+/C:\My_Designs\procesadorUSB\PU.vhd=-1
+/C:\My_Designs\procesadorUSB\AR.vhd=-1
+/MUX.vhd=-1
+
+[Files.Data]
+.\src\uart.vhd=VHDL Source Code
+.\src\ucp.vhd=VHDL Source Code
+.\src\UC.vhd=VHDL Source Code
+C:\My_Designs\procesadorUSB\PU.vhd=VHDL Source Code
+C:\My_Designs\procesadorUSB\AR.vhd=VHDL Source Code
+.\src\MUX.vhd=VHDL Source Code
+

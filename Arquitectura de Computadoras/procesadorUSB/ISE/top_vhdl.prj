@@ -1,0 +1,7 @@
+vhdl work "C:\My_Designs\procesadorUSB\uart\src\ucp.vhd"
+vhdl work "C:\My_Designs\procesadorUSB\uart\src\UC.vhd"
+vhdl work "C:\My_Designs\procesadorUSB\uart\src\uart.vhd"
+vhdl work "C:\My_Designs\procesadorUSB\uart\src\MUX.vhd"
+vhdl work "C:\My_Designs\procesadorUSB\PU.vhd"
+vhdl work "C:\My_Designs\procesadorUSB\AR.vhd"
+vhdl work "C:\My_Designs\procesadorUSB\ISE\top.vhf"

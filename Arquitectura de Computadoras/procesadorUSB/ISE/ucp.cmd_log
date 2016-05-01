@@ -1,0 +1,20 @@
+vhdtdtfi -lib work ../uart/src/ucp.vhd -prj ISE -o ucp.spl -module ucp -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ucp.spl C:/My_Designs/procesadorUSB/ISE/ucp.sym 
+vhdtdtfi -lib work ../uart/src/ucp.vhd -prj ISE -o ucp.spl -module ucp -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ucp.spl C:/My_Designs/procesadorUSB/ISE/ucp.sym 
+vhdtdtfi -lib work ../uart/src/ucp.vhd -prj ISE -o ucp.spl -module ucp -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ucp.spl C:/My_Designs/procesadorUSB/ISE/ucp.sym 
+vhdtdtfi -lib work ../uart/src/ucp.vhd -prj ISE -o ucp.spl -module ucp -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ucp.spl C:/My_Designs/procesadorUSB/ISE/ucp.sym 
+vhdtdtfi -lib work ../uart/src/ucp.vhd -prj ISE -o ucp.spl -module ucp -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ucp.spl C:/My_Designs/procesadorUSB/ISE/ucp.sym 
+vhdtdtfi -lib work ../uart/src/ucp.vhd -prj ISE -o ucp.spl -module ucp -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ucp.spl C:/My_Designs/procesadorUSB/ISE/ucp.sym 
+vhdtdtfi -lib work ../uart/src/ucp.vhd -prj ISE -o ucp.spl -module ucp -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ucp.spl C:/My_Designs/procesadorUSB/ISE/ucp.sym 
+vhdtdtfi -lib work ../uart/src/ucp.vhd -prj ISE -o ucp.spl -module ucp -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ucp.spl C:/My_Designs/procesadorUSB/ISE/ucp.sym 
+vhdtdtfi -lib work ../uart/src/ucp.vhd -prj ISE -o ucp.spl -module ucp -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ucp.spl C:/My_Designs/procesadorUSB/ISE/ucp.sym 
+vhdtdtfi -lib work ../uart/src/ucp.vhd -prj ISE -o ucp.spl -module ucp -template C:/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ucp.spl C:/My_Designs/procesadorUSB/ISE/ucp.sym 
