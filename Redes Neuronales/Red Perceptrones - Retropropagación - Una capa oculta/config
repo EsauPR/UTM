@@ -1,0 +1,6 @@
+neuronas capa entrada: 30
+neuronas cada oculta: 20
+neuronas capa salida: 4
+numero de presentaciones: 100
+coeficiente de aprendizaje: 0.99
+funcion de activacion: 1
