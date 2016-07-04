@@ -1,0 +1,6 @@
+Número de clases : 20
+Número de presentaciones : 20
+Coeficiente de aprendizaje, [0 < alfa < 1] constante, [-1] variable : -1
+Inicialización de pesos, [0] constante(0.5), [1] variable : 0
+Función de distancia, [0] Euclidiana, [1] Manhattan : 1
+Radio de distancia : 4
